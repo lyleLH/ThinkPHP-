@@ -1,155 +1,166 @@
-ThinkPHP 5.1
-===============
+## Part 1 PHP项目环境搭建
 
-ThinkPHP5.1对底层架构做了进一步的改进，减少依赖，其主要特性包括：
+操作系统:`macOS High Sierra 10.13.2 (17C88)`
 
- + 采用容器统一管理对象
- + 支持Facade
- + 注解路由支持
- + 路由跨域请求支持
- + 配置和路由目录独立
- + 取消系统常量
- + 助手函数增强
- + 类库别名机制
- + 增加条件查询
- + 改进查询机制
- + 配置采用二级
- + 依赖注入完善
+运行环境:`PHP7` + `Nginx`
+
+> PHP 7.1.12 (cli) (built: Dec  2 2017 12:15:25) ( NTS )
+
+> nginx version: nginx/1.12.2
 
 
-> ThinkPHP5的运行环境要求PHP5.6以上。
+## 相关软件
+
+### HomeBrew
+
+`HomeBrew` 
+
+常用命令
+`brew services list`
+
+```
+php71 started liuhao /Users/liuhao/Library/LaunchAgents/homebrew.mxcl.php71.plist
+nginx started liuhao /Users/liuhao/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+```
+
+使用`HomeBrew`安装的软件服务,可以用 `brew services list`查询其是否正在运行或者状态:
+
+- `Php-fpm`的已运行
+- `nginx`的已运行
+
+### Php-fpm
+
+`Php-fpm` 的配置文件目录 
+
+```
+/etc/php-fpm.d/www.conf
+
+```
+
+### Nginx
+
+Nginx的配置文件目录
+
+```
+ /usr/local/etc/nginx/nginx.conf
+```
+
+打开此文件并编辑
+在最后一行 添加一行:
+
+```
+include conf.d/*.conf;
+
+```
+这一句就是让`Nginx`在运行的时候 **自动查找我们的自定义目录下的配置文件并载入**
+
+操作方式:
+
+在与`nginx.conf`的同一级目录下(也就是`/usr/local/etc/nginx/`),创建目录`conf.d`:
+
+```
+mkdir conf.d
+
+cd conf.d
+```
+进入后创建你的某个应用配置文件:
+
+```
+touch mySamplesApp.conf
+
+```
+
+修改Host文件
+
+```
+subl /etc/hosts
+
+```
+
+在文件中新增一行
+
+```
+127.0.0.1 	myApp.lc
+```
+### 我的应用和配置
+
+#### 创建我的应用 
+
+在任意位置创建一个新的目录,并记住目录的**绝对路径**
+
+```
+/Users/liuhao/Documents/PHPProjectSamples
+
+```
+此时你的php应用工程还是空的
+
+#### 记住Hosts文件中你为php应用绑定的域名
+
+```
+myApp.lc
+```
 
 
-## 目录结构
+#### 我的项目配置
 
-初始的目录结构如下：
+在刚才的创建的配置文件`mySamplesApp.conf`中,添加如下配置:
 
-~~~
-www  WEB部署目录（或者子目录）
-├─application           应用目录
-│  ├─common             公共模块目录（可以更改）
-│  ├─module_name        模块目录
-│  │  ├─common.php      模块函数文件
-│  │  ├─controller      控制器目录
-│  │  ├─model           模型目录
-│  │  ├─view            视图目录
-│  │  └─ ...            更多类库目录
-│  │
-│  ├─command.php        命令行定义文件
-│  ├─common.php         公共函数文件
-│  └─tags.php           应用行为扩展定义文件
-│
-├─config                应用配置目录
-│  ├─module_name        模块配置目录
-│  │  ├─database.php    数据库配置
-│  │  ├─cache           缓存配置
-│  │  └─ ...            
-│  │
-│  ├─app.php            应用配置
-│  ├─cache.php          缓存配置
-│  ├─cookie.php         Cookie配置
-│  ├─database.php       数据库配置
-│  ├─log.php            日志配置
-│  ├─session.php        Session配置
-│  ├─template.php       模板引擎配置
-│  └─trace.php          Trace配置
-│
-├─route                 路由定义目录
-│  ├─route.php          路由定义
-│  └─...                更多
-│
-├─public                WEB目录（对外访问目录）
-│  ├─index.php          入口文件
-│  ├─router.php         快速测试文件
-│  └─.htaccess          用于apache的重写
-│
-├─thinkphp              框架系统目录
-│  ├─lang               语言文件目录
-│  ├─library            框架类库目录
-│  │  ├─think           Think类库包目录
-│  │  └─traits          系统Trait目录
-│  │
-│  ├─tpl                系统模板目录
-│  ├─base.php           基础定义文件
-│  ├─console.php        控制台入口文件
-│  ├─convention.php     框架惯例配置文件
-│  ├─helper.php         助手函数文件
-│  ├─phpunit.xml        phpunit配置文件
-│  └─start.php          框架入口文件
-│
-├─extend                扩展类库目录
-├─runtime               应用的运行时目录（可写，可定制）
-├─vendor                第三方类库目录（Composer依赖库）
-├─build.php             自动生成定义文件（参考）
-├─composer.json         composer 定义文件
-├─LICENSE.txt           授权说明文件
-├─README.md             README 文件
-├─think                 命令行入口文件
-~~~
+```
+    server {
+        listen       8080;  //访问你php应用的端口
+        
+        server_name  myApp.lc; //本机host文件中,你为php应用所绑定的域名
+        
+        root /Users/liuhao/Documents/PHPProjectSamples;//php应用的本机绝对路径
+        
+        index index.html index.htm index.php;
 
-> router.php用于php自带webserver支持，可用于快速测试
-> 切换到public目录后，启动命令：php -S localhost:8888  router.php
-> 上面的目录结构和名称是可以改变的，这取决于你的入口文件和配置参数。
+        charset utf-8;
 
-## 升级指导
+        location / {
+                if (!-e $request_filename) {
+                        rewrite  ^(.*)$  /index.php?s=$1  last;
+                        #break;
+                }
+        }
 
-原有下面系统类库的命名空间需要调整：
+        location ~ \.php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+    }
+    
+```
 
-* think\App      => think\facade\App （或者 App ）
-* think\Cache    => think\facade\Cache （或者 Cache ）
-* think\Config   => think\facade\Config （或者 Config ）
-* think\Cookie   => think\facade\Cookie （或者 Cookie ）
-* think\Debug    => think\facade\Debug （或者 Debug ）
-* think\Hook     => think\facade\Hook （或者 Hook ）
-* think\Lang     => think\facade\Lang （或者 Lang ）
-* think\Log      => think\facade\Log （或者 Log ）
-* think\Request  => think\facade\Request （或者 Request ）
-* think\Response => think\facade\Reponse （或者 Reponse ）
-* think\Route    => think\facade\Route （或者 Route ）
-* think\Session  => think\facade\Session （或者 Session ）
-* think\Url      => think\facade\Url （或者 Url ）
 
-原有的配置文件config.php 拆分为app.php cache.php 等独立配置文件 放入config目录。
-原有的路由定义文件route.php 移动到route目录
+#### Nginx重新加载配置
 
-## 命名规范
+`nginx -s reload`
 
-`ThinkPHP5`遵循PSR-2命名规范和PSR-4自动加载规范，并且注意如下规范：
+#### 创建第一个php文件
+在你的php应用的目录中(目前还是空的)`/Users/liuhao/Documents/PHPProjectSamples`:
 
-### 目录和文件
 
-*   目录不强制规范，驼峰和小写+下划线模式均支持；
-*   类库、函数文件统一以`.php`为后缀；
-*   类的文件名均以命名空间定义，并且命名空间的路径和类库文件所在路径一致；
-*   类名和类文件名保持一致，统一采用驼峰法命名（首字母大写）；
+` touch index.php`
 
-### 函数和类、属性命名
-*   类的命名采用驼峰法，并且首字母大写，例如 `User`、`UserType`，默认不需要添加后缀，例如`UserController`应该直接命名为`User`；
-*   函数的命名使用小写字母和下划线（小写字母开头）的方式，例如 `get_client_ip`；
-*   方法的命名使用驼峰法，并且首字母小写，例如 `getUserName`；
-*   属性的命名使用驼峰法，并且首字母小写，例如 `tableName`、`instance`；
-*   以双下划线“__”打头的函数或方法作为魔法方法，例如 `__call` 和 `__autoload`；
+```
+<?php
+	phpinfo();
+?>
+```
 
-### 常量和配置
-*   常量以大写字母和下划线命名，例如 `APP_PATH`和 `THINK_PATH`；
-*   配置参数以小写字母和下划线命名，例如 `url_route_on` 和`url_convert`；
+#### 浏览器访问 应用
 
-### 数据表和字段
-*   数据表和字段采用小写加下划线方式命名，并注意字段名不要以下划线开头，例如 `think_user` 表和 `user_name`字段，不建议使用驼峰和中文作为数据表字段命名。
+在浏览器打开 `http://myapp.lc:8080/`
 
-## 参与开发
-请参阅 [ThinkPHP5 核心框架包](https://github.com/top-think/framework)。
+看到以下页面
 
-## 版权信息
+就说明你的本地应用运行配置成功了
 
-ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
+![phpinfo输入页面](http://upload-images.jianshu.io/upload_images/1206973-bd5b4ef23fb126dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-版权所有Copyright © 2006-2018 by ThinkPHP (http://thinkphp.cn)
 
-All rights reserved。
 
-ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
-
-更多细节参阅 [LICENSE.txt](LICENSE.txt)
