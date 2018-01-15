@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "libTp5"
+		},
+		{
+			"path": "libTp5/application/api/model"
+		},
+		{
+			"path": "libTp5/application/api/service"
+		},
+		{
+			"path": "/Users/liuhao/Documents/YCTech/100Mood_backend/application/api/cache"
+		}
+	],
+	"settings": {}
+}
