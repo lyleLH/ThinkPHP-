@@ -1,0 +1,445 @@
+---------------------------------------------------------------
+[ 2018-01-15T10:05:36+08:00 ] 127.0.0.1 GET /
+[ info ] myapp.lc:8080/ [运行时间：0.018954s][吞吐率：52.76req/s] [内存消耗：1,165.90kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T10:05:37+08:00 ] 127.0.0.1 GET /
+[ info ] myapp.lc:8080/ [运行时间：0.016505s][吞吐率：60.59req/s] [内存消耗：1,165.90kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T10:06:15+08:00 ] 127.0.0.1 POST /
+[ info ] myapp.lc:8080/ [运行时间：0.013314s][吞吐率：75.11req/s] [内存消耗：1,166.66kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary97JaBBt5VFrh49xB',
+  'postman-token' => 'cd1fae6f-f256-97ee-ffdf-3dbed8781c7b',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-length' => '444',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+)
+[ info ] [ PARAM ] array (
+  'goodsName' => '欧莱雅洗面奶',
+  'price' => '49',
+  'payType' => '2',
+  'city' => '武汉',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T10:06:30+08:00 ] 127.0.0.1 POST /Blog/Bloghome
+[ info ] myapp.lc:8080/Blog/Bloghome [运行时间：0.019659s][吞吐率：50.87req/s] [内存消耗：1,169.64kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary6JDw0ZqArcmWlLOC',
+  'postman-token' => '53fa54b0-d6ca-bd22-b976-5564a74bbb0d',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-length' => '444',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+)
+[ info ] [ PARAM ] array (
+  'goodsName' => '欧莱雅洗面奶',
+  'price' => '49',
+  'payType' => '2',
+  'city' => '武汉',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T10:06:32+08:00 ] 127.0.0.1 POST /Blog/Bloghome
+[ info ] myapp.lc:8080/Blog/Bloghome [运行时间：0.017682s][吞吐率：56.55req/s] [内存消耗：1,169.64kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryX5YOhbnJKO1yXXjh',
+  'postman-token' => '302903a4-9240-6e21-99b5-e159c6716cf4',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-length' => '444',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+)
+[ info ] [ PARAM ] array (
+  'goodsName' => '欧莱雅洗面奶',
+  'price' => '49',
+  'payType' => '2',
+  'city' => '武汉',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T10:07:20+08:00 ] 127.0.0.1 POST /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.039956s][吞吐率：25.03req/s] [内存消耗：2,001.38kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryLfWiTcILrefHGgb3',
+  'postman-token' => '8f977d74-53a8-aba6-8935-72acb4606cc4',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-length' => '444',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+)
+[ info ] [ PARAM ] array (
+  'goodsName' => '欧莱雅洗面奶',
+  'price' => '49',
+  'payType' => '2',
+  'city' => '武汉',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007404s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.008109s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.002397s ]
+---------------------------------------------------------------
+[ 2018-01-15T10:07:40+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.029322s][吞吐率：34.10req/s] [内存消耗：2,000.43kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'f7880c72-fb92-305a-47eb-410a54338d70',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.005704s ]
+---------------------------------------------------------------
+[ 2018-01-15T14:19:54+08:00 ] 127.0.0.1 GET /
+[ info ] myapp.lc:8080/ [运行时间：0.028752s][吞吐率：34.78req/s] [内存消耗：1,166.02kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:20:22+08:00 ] 127.0.0.1 GET /api
+[ info ] myapp.lc:8080/api [运行时间：0.015902s][吞吐率：62.89req/s] [内存消耗：1,097.08kb] [文件加载：45]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:20:34+08:00 ] 127.0.0.1 GET /api/blog/bolghome
+[ info ] myapp.lc:8080/api/blog/bolghome [运行时间：0.015200s][吞吐率：65.79req/s] [内存消耗：1,171.99kb] [文件加载：49]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:21:12+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.032223s][吞吐率：31.03req/s] [内存消耗：2,000.43kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => '8093e4b1-d2fa-eebd-1098-0f49e28e57a4',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002302s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.008239s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.001567s ]
+---------------------------------------------------------------
+[ 2018-01-15T14:22:22+08:00 ] 127.0.0.1 GET /api/Blog/bolghome
+[ info ] myapp.lc:8080/api/Blog/bolghome [运行时间：0.014740s][吞吐率：67.84req/s] [内存消耗：1,171.99kb] [文件加载：49]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:22:28+08:00 ] 127.0.0.1 GET /api/Blog/Bolghome
+[ info ] myapp.lc:8080/api/Blog/Bolghome [运行时间：0.014088s][吞吐率：70.98req/s] [内存消耗：1,171.99kb] [文件加载：49]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:22:32+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.019540s][吞吐率：51.18req/s] [内存消耗：2,000.53kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.000832s ]
+---------------------------------------------------------------
+[ 2018-01-15T14:22:47+08:00 ] 127.0.0.1 GET /api/Blog/Bolghome
+[ info ] myapp.lc:8080/api/Blog/Bolghome [运行时间：0.011139s][吞吐率：89.78req/s] [内存消耗：1,172.03kb] [文件加载：49]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:22:55+08:00 ] 127.0.0.1 GET /api/Blog/Bolghome
+[ info ] myapp.lc:8080/api/Blog/Bolghome [运行时间：0.014763s][吞吐率：67.74req/s] [内存消耗：1,172.03kb] [文件加载：49]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-15T14:23:08+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.017953s][吞吐率：55.70req/s] [内存消耗：2,000.53kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000246s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.000893s ]
+---------------------------------------------------------------
+[ 2018-01-15T16:08:10+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.024243s][吞吐率：41.25req/s] [内存消耗：2,000.43kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/libTp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'postman-token' => 'ba4bb2d8-173a-40bb-b80e-a6aa5ae6b979',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.001117s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.000838s ]
+---------------------------------------------------------------
+[ 2018-01-15T16:51:12+08:00 ] 127.0.0.1 GET /api/Blog/Bloghome
+[ info ] myapp.lc:8080/api/Blog/Bloghome [运行时间：0.020531s][吞吐率：48.71req/s] [内存消耗：1,999.87kb] [文件加载：53]
+[ info ] [ LANG ] /Users/liuhao/Documents/PHPProjectSamples/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'myapp.lc:8080',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000333s ] mysql:host=localhost;port=3306;dbname=dev;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `request_log` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] INSERT INTO `request_log` (`code` , `msg` , `uid`) VALUES (0 , '请求成功' , 1) [ RunTime:0.002157s ]
